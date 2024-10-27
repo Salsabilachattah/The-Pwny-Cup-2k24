@@ -1,0 +1,9 @@
+services:
+
+  baby-zkp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '1200:1337'
+    restart: always

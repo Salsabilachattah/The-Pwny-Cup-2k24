@@ -1,0 +1,9 @@
+services:
+
+  mind-your-own-keys:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '1201:5000'
+    restart: always

@@ -1,0 +1,6 @@
+services:
+  trivial:
+    build: .
+    ports:
+      - 1001:1337
+    restart: always
