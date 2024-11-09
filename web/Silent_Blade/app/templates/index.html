@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PwnyCup2k24</title>
+  </head>
+
+  <style>
+    body {
+      background-color: #e7f9d8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1,
+    h6 {
+      text-align: center;
+      color: #4caf59;
+    }
+
+    h6 {
+      color: #222;
+    }
+
+    input[type="text"] {
+      width: 80%;
+      border: 1px solid #222;
+      height: 50px;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    input[type="submit"] {
+      margin: auto;
+      display: block;
+      border: 1px solid #222;
+      border-radius: 12px;
+      padding: 20px;
+      font-size: 24px;
+      color: green;
+      background-color: white;
+    }
+
+    input[type="submit"]:hover {
+      cursor: pointer;
+      background-color: #222;
+      color: white;
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+
+  <body>
+    <h1>Welcome to PwnyCup2k24 !</h1>
+    <h6>
+      We hope you are enjoying hacking around. Could you just remind me of your
+      name?.
+    </h6>
+    <form action="submit" method="GET">
+      <input type="text" name="value" />
+
+      <input type="submit" value="Validate" />
+    </form>
+  </body>
+</html>

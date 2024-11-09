@@ -1,0 +1,7 @@
+- it is easy to see that debug mode was on.
+- one way we can hack the application is to get the secrets that are stored in the environment variable.
+- to do that, because we have debug mode on in django, we need to find a way to trigger a server error
+- in the submit comment route we can see a maxlength on that input
+- usually if there is a lack of user data control in the backend, we trigger a server error by saving incorrect data to the data (bigger length for example).
+- here the check is only in HTML so it can be bypassed easily, and we can send data with size bigger than 50 to get a server error.
+- This challenge was inspired by multiple real-life cases in web applications, where there was a possibiliy to get environment variables using this trick

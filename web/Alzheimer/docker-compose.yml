@@ -1,0 +1,12 @@
+services:
+  alhzeimer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "1305:8000"
+    restart: always
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DJANGO_SETTINGS_MODULE=myproject.settings
+    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
