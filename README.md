@@ -23,7 +23,8 @@ git clone https://github.com/Salsabilachattah/The-Pwny-Cup-2k24.git
 
 - Navigate to the challenge folder:
 
-```bash cd ./path/to/challenge
+```bash
+cd ./path/to/challenge
 ```
 
 - Build and run the challenge using Docker:
